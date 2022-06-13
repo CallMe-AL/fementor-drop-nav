@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body class="flex">
+  <div class="overlay"></div>
+  <header class="main-header">
+    <div class="header-wrap flex">
+      <img src="images/logo.svg" alt="logo">
+      <!-- mobile nav -->
+      <img class="sidebar-img" src="images/icon-menu.svg" alt="hamburger menu">  
+      <!-- desktop nav -->
+      <nav class="desktop-nav">
+        <ul class="flex">
+          <li class="features">
+            <a class="flex drop-tag" href="#" aria-haspopup="true">Features <img class="drop-menu drop-img" src="images/icon-arrow-down.svg"
+                alt="arrow down"></a>
+            <ul class="features-dropdown desktop-dropdown hidden" aria-label="submenu">
+              <li class="flex"><img src="images/icon-todo.svg" alt="todo list"><a href="#">Todo List</a></li>
+              <li class="flex"><img src="images/icon-calendar.svg" alt="calendar"><a href="#">Calendar</a></li>
+              <li class="flex"><img src="images/icon-reminders.svg" alt="Reminders"><a href="#">Reminders</a></li>
+              <li class="flex"><img src="images/icon-planning.svg" alt="planning"><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <li class="company">
+            <a class="flex drop-tag" href="#" aria-haspopup="true">Company <img class="drop-menu" src="images/icon-arrow-down.svg"
+                alt="arrow down"></a>            
+            <ul class="company-dropdown desktop-dropdown hidden" aria-label="submenu">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>        
+          </li>
+          <li>
+            <a href="#">Careers</a>          
+          </li>
+          <li>
+            <a href="#">About</a>          
+          </li>
+        </ul>        
+      </nav>
+      <div class="profile-section desktop">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </div>
+    <!-- mobile nav -->
+    <nav class="mobile-nav" aria-expanded="false">
+      <ul class="flex">
+        <li class="features">
+          <a class="flex drop-tag" href="#" aria-haspopup="true">Features <img class="drop-menu drop-img"
+              src="images/icon-arrow-down.svg" alt="arrow down"></a>
+          <ul class="features-dropdown flex dropdown hidden" aria-expanded='false' aria-label="submenu">
+            <li class="flex"><img src="images/icon-todo.svg" alt="todo list"><a href="#">Todo List</a></li>
+            <li class="flex"><img src="images/icon-calendar.svg" alt="calendar"><a href="#">Calendar</a></li>
+            <li class="flex"><img src="images/icon-reminders.svg" alt="Reminders"><a href="#">Reminders</a></li>
+            <li class="flex"><img src="images/icon-planning.svg" alt="planning"><a href="#">Planning</a></li>
+          </ul>
+        </li>
+        <li class="company">
+          <a class="flex drop-tag" href="#" aria-haspopup="true">Company <img class="drop-menu" src="images/icon-arrow-down.svg"
+              alt="arrow down"></a>
+          <ul class="company-dropdown flex dropdown hidden" aria-expanded='false' aria-label="submenu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <div class="profile-section flex">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </nav>    
+  </header>
+
+  <main>
+    <div class="main-wrap">
+      <section class="main-info">
+        <article class="main-content">
+          <h1>Make <span class="desktop-break">remote work</span></h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          <button class="learn-more-btn">Learn more</button>
+        </article>
+        <article class="main-clients">
+          <ul class="client-list flex">
+            <li><img src="images/client-databiz.svg" alt="databiz"></li>
+            <li><img src="images/client-audiophile.svg" alt="audiophile"></li>
+            <li><img src="images/client-meet.svg" alt="meet"></li>
+            <li><img src="images/client-maker.svg" alt="maker"></li>          
+          </ul>
+        </article>
+      </section>
+      <section class="img-hero">
+        <picture>
+          <source srcset="images/image-hero-desktop.png" media="(min-width: 800px)">
+          <img src="images/image-hero-mobile.png" alt="hero mobile">
+        </picture>      
+      </section>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub/intro-section-with-dropdown-navigation-O5M3Kks7Q6" target="_blank" referrer="noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/CallMe-AL">Alex 👋</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
